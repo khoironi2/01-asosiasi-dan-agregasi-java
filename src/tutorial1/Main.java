@@ -12,6 +12,15 @@ public class Main {
         dsn.setNimMhs(mhs2.getNimMhs());
         dsn.setNimMhs(mhs3.getNimMhs());
         System.out.println("------------");
+        
         dsn.display();
+        mhs1.setNimMhs("0983");  // tidak akan merubah nim mhs1 yang ada didosen karena clas dosen dan mahasiswa tidak terikat, tetapi hanya mengakses Nilai Atributnya saja
+        
+        Jurusan jurusan1 = new Jurusan("01", "Informatika");
+        jurusan1.addMahasiswa(mhs1);
+        jurusan1.addMahasiswa(mhs2);
+        jurusan1.addMahasiswa(mhs3);
+
+        jurusan1.displayMhsJurusan();
     }
 }

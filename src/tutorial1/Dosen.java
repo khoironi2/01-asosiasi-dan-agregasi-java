@@ -3,7 +3,9 @@ package tutorial1;
 public class Dosen {
     private String nidn;
     private int jmlMhs = 0;
-    private String[] nimMhs = new String[5];
+
+    //Asosiasi
+    private String[] nimMhs = new String[5]; 
 
     public Dosen(String nidn){
         this.nidn = nidn;
